@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="heading"><h1>test calculator</h1></div>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button onclick="appendToResult('7')" tabindex="0">7</button>
+            <button onclick="appendToResult('8')" tabindex="0">8</button>
+            <button onclick="appendToResult('9')" tabindex="0">9</button>
+            <button class="operator" onclick="appendToResult('/')" tabindex="0">/</button>
+            <button onclick="appendToResult('4')" tabindex="0">4</button>
+            <button onclick="appendToResult('5')" tabindex="0">5</button>
+            <button onclick="appendToResult('6')" tabindex="0">6</button>
+            <button class="operator" onclick="appendToResult('*')" tabindex="0">*</button>
+            <button onclick="appendToResult('1')" tabindex="0">1</button>
+            <button onclick="appendToResult('2')" tabindex="0">2</button>
+            <button onclick="appendToResult('3')" tabindex="0">3</button>
+            <button class="operator" onclick="appendToResult('-')" tabindex="0">-</button>
+            <button onclick="appendToResult('0')" tabindex="0">0</button>
+            <button onclick="appendToResult('.')" tabindex="0">.</button>
+            <button class="equal" onclick="calculateResult()" tabindex="0">=</button>
+            <button class="operator" onclick="appendToResult('+')" tabindex="0">+</button>
+            <button class="clear" onclick="clearResult()" tabindex="0">C</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
